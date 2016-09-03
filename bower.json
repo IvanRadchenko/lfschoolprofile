@@ -1,0 +1,21 @@
+{
+  "name": "scssbemproject",
+  "description": "My SASS&BEM project portfolio",
+  "main": "",
+  "authors": [
+    "Ivan Radchenko <radchenk@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "normalize-css": "normalize.css#^4.2.0"
+  }
+}
