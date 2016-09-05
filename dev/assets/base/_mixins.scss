@@ -1,0 +1,22 @@
+//Font mixin
+@mixin fonts($style : fira) {
+  @if $style == fira {
+    font-family: 'fira_sansregular';
+  }
+
+  @if $style == medium {
+    font-family: 'fira_sansmedium';
+  }
+
+  @if $style == light {
+    font-family: 'fira_sanslight';
+  }
+
+  @if $style == italic {
+    font-family: 'fira_sansitalic';
+  }
+
+  @if $style == fontawesome {
+    font-family: 'fontawesomeregular';
+  }
+} 

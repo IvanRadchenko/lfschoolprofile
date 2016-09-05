@@ -1,3 +1,92 @@
 extends ./head.pug
 block body
   body
+    header.header
+      .header-persona
+        persona-photo
+          img(src=)
+        persona-personinfo
+          p Радченко Иван Александрович
+          p radchenk@gmail.com
+      .header-social
+        ul.social
+          li.social-item
+            a.social-link.social-link__git
+          li.social-item
+            a.social-link.social-link__skype
+          li.social-item
+            a.social-link.social-link__vk
+    section.intro
+      h1 О будущем ученике
+      p Ребятам из Loftschool будет полезно узнать немного обо мне
+      .intro-item.intro-item__left
+        .introitem-icon
+        .introitem-description
+          h3 Немного обо мне
+          p Я живу в Санкт-Петербурге(Россия). Мне 27 лет. Высшее образование - закончил Национальный исследовательский университет "МЭИ". Опыт в разработке 1 год.
+      .intro-item.intro-item__right
+        .introitem-icon
+        .introitem-description
+          h3 Мой опыт в разработке
+          p В этом блоке я рассказываю о себе, что я уже умею. Здесь я укажу другие курсы, которе до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру html5,css3,sass,jade,git и пр.
+    section.courses
+      h1
+      p
+      ul.courses-list
+        li.courses-item
+          .course-image
+          .course-description
+            h3 Основы Javascript
+            p Видеокурс о одном из самых популярных языков программирования - JS. Изучая этото курс вы познаете этот прекрасные язык от самых основ.
+            p 24 урока (6 часов 46 минут)
+          .course_checkbox
+            input(type="checkbox" class="checkbox")
+            label Посмотрел
+        li.courses-item
+          .course-image
+          .course-description
+            h3
+            h3 Основы JQUERY
+            p Видеокурс о одном из самых популярных языков программирования - JS. Изучая этото курс вы познаете этот прекрасные язык от самых основ.
+            p 11 уроков (2 часа 6 минут)
+          .course_checkbox
+            input(type="checkbox" class="checkbox")
+            label Посмотрел
+        li.courses-item
+          .course-image
+          .course-description
+            h3 Базовые элементы страницы
+            p Видеокурс по верстке и программированию оснвных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
+            p 9 уроков (2 часа 7 минут)
+          .course_checkbox
+            input(type="checkbox" class="checkbox")
+            label Посмотрел
+        li.courses-item
+          .course-image
+          .course-description
+            h3 Создание адаптивных сайтов
+            p В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптитвная верстка и дизайн.
+            p 7 уроков (2 часа 11 минут)
+          .course_checkbox
+            input(type="checkbox" class="checkbox")
+            label Посмотрел
+        li.courses-item
+          .course-image
+          .course-description
+            h3 Верстка адаптивной css галереи
+            p В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.
+            p 6 уроков (1 час 9 минут)
+          .course_checkbox
+            input(type="checkbox" class="checkbox")
+            label Посмотрел
+        li.courses-item
+          .course-image
+          .course-description
+            h3 Создание адаптивных сайтов
+            p В этом курсе мы разберем как сверстать адаптивную css галерею. Так же познакомимся с Flexbox
+            p 4 урока (50 минут)
+          .course_checkbox
+            input(type="checkbox" class="checkbox")
+            label Посмотрел
+    footer.footer
+      p Footer which should be deadly pinned to the bottom no matter the amount of content is on the page.
