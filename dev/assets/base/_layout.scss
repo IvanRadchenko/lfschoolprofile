@@ -1,38 +1,96 @@
-html {
- width: 100%;
+* {
+  box-sizing: border-box;
+}
+
+html, body {
  height: 100%;
 }
 
 body {
-  width: 960px;
   font-size: 16px;
-  margin: auto;
-  padding: 0 10px; 
 }
 
+//Wrapppers
+.header-wrapper, .intro-wrapper, .courses-wrapper,.footer-wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+
+  position:relative;
+}
+
+.header-wrapper {
+  width: 1200px;
+  }
+
+.intro-wrapper, .courses-wrapper {
+  width: 960px;
+  padding: 0 10px;
+}
+
+.courses-wrapper {
+  margin-bottom: -72px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 72px;
+  }
+}
+
+.footer-wrapper {
+  width: 512px;
+  padding-top: 15px;
+}
+
+//Add Header block here
 .header {
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   height: 90px;
 
   background: rgb(140,195,75);
-  box-shadow: ;
+  box-shadow: 0px 1px 2px 0px rgba(204,204,204,0.6),
+  0px 2px 2px 0px rgba(206,206,206,0.6),
+  0px 3px 2px 0px rgba(210,210,210,0.6),
+  0px 4px 2px 0px rgba(216,216,216,0.6),
+  0px 5px 2px 0px rgba(224,224,224,0.6),
+  0px 6px 2px 0px rgba(235,235,235,0.6),
+  0px 7px 2px 0px rgba(235,235,235,0.6),
+  0px 8px 2px 0px rgba(243,243,243,0.6),
+  0px 9px 2px 0px rgba(249,249,249,0.6);
 }
 
 
-
+//Add sticky footer here
+.courses:after {
+  content: "";
+  height: 72px;
+}
 
 .footer {  
+  position: relative;
+
   height: 72px;
   
+  text-align: center;
 
-
-  color: white;
+  //Fonts
+  color: rgba(169,169,169,.5);
   @include fonts(fira);
   
   background: rgb(33,33,33);
+  
+  p {
+    margin: 0;
+  }
+
 }
 
+//Typography
 h1 {
-  @include fonts(fira);
+
+}
+
+h2 {
+
 }
