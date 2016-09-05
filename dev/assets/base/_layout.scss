@@ -10,7 +10,7 @@ body {
   font-size: 16px;
 }
 
-//Wrapppers
+  /*_____ Wrappers _____ */
 .header-wrapper, .intro-wrapper, .courses-wrapper,.footer-wrapper {
   min-height: 100%;
   margin: 0 auto;
@@ -20,6 +20,8 @@ body {
 
 .header-wrapper {
   width: 1200px;
+
+  overflow: hidden;
   }
 
 .intro-wrapper, .courses-wrapper {
@@ -42,7 +44,7 @@ body {
   padding-top: 15px;
 }
 
-//Add Header block here
+  /*_____ Header _____ */
 .header {
   margin: 0;
   padding: 10px 0;
@@ -58,10 +60,59 @@ body {
   0px 7px 2px 0px rgba(235,235,235,0.6),
   0px 8px 2px 0px rgba(243,243,243,0.6),
   0px 9px 2px 0px rgba(249,249,249,0.6);
+
+  /*_____ Person profile _____ */
+
+    &-person {
+      float: left;
+      margin-left: 28px;
+      width: 364px;
+    }
+
+    &-photo {
+      width: 62px;
+      height: 62px;
+
+      border-radius: 10px;
+      background: #FFF;
+    }
+}
+
+  /*_____ Social list _____ */
+.header-social {
+  float: right;
+  margin-right: 24px;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+
+  &-item {
+    list-style: none;
+    display: inline-block;
+  }
+
+  &-link {
+    display: block;
+  }
+
+  &-img__git {
+    
+  }
+
+  &-img__vk {
+    
+  }
+  
+  &-img__skype {
+    
+  }
 }
 
 
-//Add sticky footer here
+
+  /*_____ Sticky footer _____ */
 .courses:after {
   content: "";
   height: 72px;
@@ -79,18 +130,19 @@ body {
   @include fonts(fira);
   
   background: rgb(33,33,33);
-  
-  p {
-    margin: 0;
-  }
 
 }
 
-//Typography
+  /*_____ Fonts base _____ */
 h1 {
 
 }
 
 h2 {
 
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
