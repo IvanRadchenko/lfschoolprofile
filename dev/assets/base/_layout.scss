@@ -1,35 +1,83 @@
 * {
   box-sizing: border-box;
 }
+html {
+  line-height: 21px;
+}
 
 html, body {
  height: 100%;
+ width: 100%;
 }
 
 body {
-  font-size: 16px;
+  font-size: 14px;
+  @include fonts(fira);
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  /*_____ Fonts base reset_____ */
+h1,h2,h3, p{
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  @include fonts(medium);
+}
+
+h3 {
+  font-size: 21px;
+  @include fonts(fira);
+}
+
+p {
+  margin: 18px 0;
+   //Fonts
+  color: rgba(169,169,169,.5);
+  @include fonts(fira);
+}
+
+.main__subtitle {
+  margin: 20px 0;
+  @include fonts(light);
+  color: rgba(169,169,169,.5);
+  }
+
+.main__title {
+  margin-top: 85px;
+}
   /*_____ Wrappers _____ */
-.header-wrapper, .intro-wrapper, .courses-wrapper,.footer-wrapper {
+
+.header__wrapper, .intro__wrapper, .courses__wrapper,.footer__wrapper {
   min-height: 100%;
   margin: 0 auto;
 
   position:relative;
 }
 
-.header-wrapper {
+.header__wrapper {
   width: 1200px;
 
   overflow: hidden;
   }
 
-.intro-wrapper, .courses-wrapper {
+.intro__wrapper, .courses__wrapper {
   width: 960px;
   padding: 0 10px;
 }
 
-.courses-wrapper {
+.intro__wrapper {
+  min-height: 465px;
+}
+
+.courses__wrapper {
   margin-bottom: -72px;
 
   &:after {
@@ -39,13 +87,15 @@ body {
   }
 }
 
-.footer-wrapper {
+.footer__wrapper {
   width: 512px;
   padding-top: 15px;
 }
 
   /*_____ Header _____ */
 .header {
+  position: relative;
+
   margin: 0;
   padding: 10px 0;
   height: 90px;
@@ -63,60 +113,122 @@ body {
 
   /*_____ Person profile _____ */
 
-    &-person {
+    &__person {
       float: left;
-      margin-left: 28px;
-      width: 364px;
-    }
 
-    &-photo {
+      margin-left: 43px;
+    }
+}
+
+    .person__photo {
+      float: left;
+
       width: 62px;
       height: 62px;
 
-      border-radius: 10px;
-      background: #FFF;
+      border-radius: 50px;
+      border: 1px solid rgb(210,214,205);
+      background: url("./assets/state/Vanya.png") no-repeat;
+    
+    &:hover {
+      border:2px solid white;
     }
-}
+    }
+
+    .person__personinfo {
+      float: left;
+
+      padding: 10px 20px;
+      
+      h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: white;
+        @include fonts(medium);
+      }
+
+      p {
+        color: rgb(225,238,212);
+      }
+
+    }
 
   /*_____ Social list _____ */
-.header-social {
+.header__social {
   float: right;
-  margin-right: 24px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .social {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
 
-  &-item {
-    list-style: none;
-    display: inline-block;
-  }
-
-  &-link {
+  &__link {
     display: block;
-    color: white;
-  }
+    
+    padding: 10px;
+    @include fonts(fontawesome);
 
-  &-img__git {
-    height: 62;
-    width: 62;
-  }
+  /*_____ Social SVG hover effect _____ */
+    &:hover {
+      cursor: pointer;
 
-  &-img__vk {
-    height: 62;
-    width: 62;
+    .social__img--git,.social__img--vk,.social__img--skype {
+      fill: white;
+      }
+    }
   }
-  
-  &-img__skype {
-    height: 62;
-    width: 62;
+  /*_____ Social SVG colors _____ */
+
+  &__img--git, &__img--vk, &__img--skype{
+    fill: rgb(225,238,212);
   }
 }
 
+ /*_____ About the Student section _____ */
+.intro__text {
+  padding-top: 77px; 
+  text-align: center;
 
+  h3 {
+    margin: 20px 0 40px 0;
+    @include fonts(light);
+  }
+}
+
+.intro__item {
+  display: inline-block;
+  width: 460px;
+
+  &--left {
+    float: left;
+  }
+
+  &--right {
+    float: right;
+  }
+}
+
+.intro {
+
+  &item__icon{
+  float: left;
+  height: 140px;
+  width: 140px;
+
+  margin-right: 20px;
+  }
+
+  &item-description {
+  float: left;
+  width: 300px;
+  }
+}
 
   /*_____ Sticky footer _____ */
+
 .courses:after {
   content: "";
   height: 72px;
@@ -128,25 +240,8 @@ body {
   height: 72px;
   
   text-align: center;
-
-  //Fonts
-  color: rgba(169,169,169,.5);
-  @include fonts(fira);
   
   background: rgb(33,33,33);
 
 }
 
-  /*_____ Fonts base _____ */
-h1 {
-
-}
-
-h2 {
-
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}

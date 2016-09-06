@@ -2,98 +2,101 @@ extends ./head.pug
 block body
   body
     header.header
-      .header-wrapper
-        .header-person
-          .persona-photo
-            img(src=)
-          .persona-personinfo
-            p Радченко Иван Александрович
+      .header__wrapper
+        .header__person
+          .person__photo
+          .person__personinfo
+            h3 Радченко Иван Александрович
             p radchenk@gmail.com
-        .header-social
+        .header__social
           ul.social
-            li.social-item
-              a.social-link
-                img.social-img__git(src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzBweCIgaGVpZ2h0PSIyOS4yNjNweCIgdmlld0JveD0iMCAwIDMwIDI5LjI2MyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzAgMjkuMjYzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMyQjJCMkIiIGQ9Ik0xOS43NDYsMjkuMjM4Yy0wLjc2MiwwLjEzNy0xLjAxNi0wLjMzMi0xLjAxNi0wLjcyM2MwLTAuNDg4LDAtMi4xMDksMC00LjEyMQ0KCQljMC0xLjQwNi0wLjQ2OS0yLjMwNS0xLjAxNi0yLjc3M2MzLjM0LTAuMzcxLDYuODU1LTEuNjQxLDYuODU1LTcuNDAyYzAtMS42NDEtMC41ODYtMi45ODgtMS41NDMtNC4wMjMNCgkJYzAuMTU2LTAuMzkxLDAuNjY0LTEuOTE0LTAuMTU2LTMuOTg0Yy0xLjI1LTAuMzkxLTQuMTIxLDEuNTQzLTQuMTIxLDEuNTQzQzE3LjU1OSw3LjQyMiwxNi4yNyw3LjI0NiwxNSw3LjI0Ng0KCQlzLTIuNTU5LDAuMTc2LTMuNzUsMC41MDhjMCwwLTIuODcxLTEuOTM0LTQuMTQxLTEuNTQzYy0wLjgwMSwyLjA3LTAuMjkzLDMuNTk0LTAuMTM3LDMuOTg0QzYuMDE2LDExLjIzLDUuNDMsMTIuNTc4LDUuNDMsMTQuMjE5DQoJCWMwLDUuNzQyLDMuNDk2LDcuMDMxLDYuODM2LDcuNDAyYy0wLjQzLDAuMzkxLTAuODIsMS4wMzUtMC45NTcsMi4wMTJjLTAuODU5LDAuMzkxLTMuMDQ3LDEuMDU1LTQuMzU1LTEuMjUNCgkJYy0wLjgyLTEuNDI2LTIuMzA1LTEuNTQzLTIuMzA1LTEuNTQzYy0xLjQ2NS0wLjAyLTAuMDk4LDAuOTE4LTAuMDk4LDAuOTE4YzAuOTc3LDAuNDQ5LDEuNjYsMi4xODgsMS42NiwyLjE4OA0KCQljMC44NzksMi42NzYsNS4wNTksMS43NzcsNS4wNTksMS43NzdjMCwxLjI1LDAuMDIsMi40NDEsMC4wMiwyLjc5M2MwLDAuMzkxLTAuMjczLDAuODU5LTEuMDM1LDAuNzIzQzQuMjk3LDI3LjI0NiwwLDIxLjYyMSwwLDE1DQoJCUMwLDYuNzE5LDYuNzE5LDAsMTUsMHMxNSw2LjcxOSwxNSwxNUMzMCwyMS42MjEsMjUuNzAzLDI3LjI0NiwxOS43NDYsMjkuMjM4eiIvPg0KPC9nPg0KPC9zdmc+DQo=")
-            li.social-item
-              a.social-link
-                img.social-img__skype(src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzBweCIgaGVpZ2h0PSIzMHB4IiB2aWV3Qm94PSIwIDAgMzAgMzAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMwIDMwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMzRjNGM0YiIGQ9Ik0yMi41LDMwYy0xLjcxOSwwLTMuMzAxLTAuNTg2LTQuNTctMS41NjNjLTAuOTM4LDAuMTk1LTEuOTM0LDAuMzEzLTIuOTMsMC4zMTMNCgkJQzcuNDAyLDI4Ljc1LDEuMjUsMjIuNTk4LDEuMjUsMTVjMC0wLjk5NiwwLjExNy0xLjk5MiwwLjMxMy0yLjkzQzAuNTg2LDEwLjgwMSwwLDkuMjE5LDAsNy41QzAsMy4zNTksMy4zNTksMCw3LjUsMA0KCQljMS43MTksMCwzLjMwMSwwLjU4Niw0LjU3LDEuNTYzQzEzLjAwOCwxLjM2NywxNC4wMDQsMS4yNSwxNSwxLjI1YzcuNTk4LDAsMTMuNzUsNi4xNTIsMTMuNzUsMTMuNzUNCgkJYzAsMC45OTYtMC4xMTcsMS45OTMtMC4zMTMsMi45M0MyOS40MTQsMTkuMiwzMCwyMC43ODIsMzAsMjIuNUMzMCwyNi42NDEsMjYuNjQxLDMwLDIyLjUsMzB6IE0xNi44MzYsMTMuMDY2bC0yLjAzMS0wLjQ2OQ0KCQljLTEuNDg0LTAuMzUyLTIuNTk4LTAuNjA1LTIuNTk4LTEuNzM4YzAtMS4wMzUsMS4wOTQtMS41MDQsMi44MTMtMS41MDRjMy4wNjYsMCwzLjEyNSwyLjI0Niw1LjAyLDIuMjQ2DQoJCWMxLjI3LDAsMi4wMzEtMC45OTYsMi4wMzEtMi4xMjljMC0yLjI0Ni0zLjczLTMuNzExLTcuNDIyLTMuNzExYy0zLjM3OSwwLTcuMzA1LDEuNDY1LTcuMzA1LDUuNDNjMCwzLjI4MSwyLjE4OCw0LjQ1Myw1LjAzOSw1LjEzNw0KCQlsMi44NTIsMC43MDNjMS43MzgsMC40MywyLjgxMywwLjYyNSwyLjgxMywxLjg3NWMwLDAuOTk2LTEuMTEzLDEuNzU4LTIuODMyLDEuNzU4Yy0zLjYxMywwLTMuODA5LTMuMDA4LTUuODk4LTMuMDA4DQoJCWMtMS4zNjcsMC0xLjk3MywwLjk3Ny0xLjk3MywyLjA1MWMwLDIuNDAyLDMuNjcyLDQuMzU1LDguMDY2LDQuMzU1YzMuNjcyLDAsNy41LTEuODM2LDcuNS01LjgwMQ0KCQlDMjIuOTEsMTQuODYzLDE5LjYwOSwxMy42OTEsMTYuODM2LDEzLjA2NnoiLz4NCjwvZz4NCjwvc3ZnPg0K")
-            li.social-item
-              a.social-link
-                img.social-img__vk(src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzcuNTEzcHgiIGhlaWdodD0iMjEuNDAzcHgiIHZpZXdCb3g9IjAgMCAzNy41MTMgMjEuNDAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzNy41MTMgMjEuNDAzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMzRjNGM0YiIGQ9Ik0zNC41Myw3LjI5Yy0zLjc4OSw1LjAzOS00LjE5OSw0LjU3LTEuMDc0LDcuNDhjMy4wMDgsMi43OTMsMy42MzMsNC4xNDEsMy43Myw0LjMxNg0KCQljMCwwLDEuMjUsMi4xODgtMS4zODcsMi4yMDdsLTUsMC4wNzhjLTEuMDc0LDAuMjE1LTIuNS0wLjc2Mi0yLjUtMC43NjJjLTEuODc1LTEuMjg5LTMuNjMzLTQuNjI5LTUtNC4xOTkNCgkJYzAsMC0xLjQwNiwwLjQ0OS0xLjM2NywzLjQ1N2MwLjAyLDAuNjQ1LTAuMjkzLDAuOTk2LTAuMjkzLDAuOTk2cy0wLjM1MiwwLjM3MS0xLjAzNSwwLjQzaC0yLjI0Ng0KCQljLTQuOTQxLDAuMzEzLTkuMjk3LTQuMjM4LTkuMjk3LTQuMjM4UzQuMjk2LDEyLjEzNCwwLjExNiwyLjMxYy0wLjI3My0wLjY0NSwwLjAyLTAuOTU3LDAuMDItMC45NTdzMC4yOTMtMC4zNzEsMS4xMTMtMC4zNzENCgkJbDUuMzUyLTAuMDM5QzcuMTA4LDEuMDIxLDcuNDYsMS4yOTQsNy40NiwxLjI5NHMwLjMxMywwLjIxNSwwLjQ2OSwwLjYyNWMwLjg3OSwyLjE4OCwyLjAxMiw0LjE4LDIuMDEyLDQuMTgNCgkJYzEuOTUzLDQuMDIzLDMuMjgxLDQuNzA3LDQuMDQzLDQuMjk3YzAsMCwwLjk5Ni0wLjYwNSwwLjc4MS01LjQ2OWMtMC4wNzgtMS43NTgtMC41NjYtMi41NTktMC41NjYtMi41NTkNCgkJYy0wLjQ0OS0wLjYwNS0xLjI4OS0wLjc4MS0xLjY2LTAuODRjLTAuMjkzLTAuMDM5LDAuMTk1LTAuNzQyLDAuODQtMS4wNTVjMC45NTctMC40NjksMi42NTYtMC40ODgsNC42NjgtMC40NjkNCgkJYzEuNTgyLDAuMDIsMi4wMzEsMC4xMTcsMi42MzcsMC4yNTRjMS44NTUsMC40NDksMS4yMywyLjE2OCwxLjIzLDYuMzA5YzAsMS4zMjgtMC4yNTQsMy4xODQsMC43MDMsMy43ODkNCgkJYzAuNDEsMC4yNzMsMS40MjYsMC4wMzksMy45MjYtNC4yMTljMCwwLDEuMTcyLTIuMDMxLDIuMDktNC4zOTVjMC4xNTYtMC40MywwLjQ4OC0wLjYwNSwwLjQ4OC0wLjYwNXMwLjMxMy0wLjE3NiwwLjc0Mi0wLjExNw0KCQlsNS42MjUtMC4wMzljMS42OTktMC4yMTUsMS45NzMsMC41NjYsMS45NzMsMC41NjZDMzcuNzUzLDIuMzQ5LDM2LjgzNSw0LjIyNCwzNC41Myw3LjI5eiIvPg0KPC9nPg0KPC9zdmc+DQo=")
+            li.social__item
+              a.social__link(href="#")
+                svg(xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30")
+                  path(class="social__img--git" d="M19.7 29.2c-0.8 0.1-1-0.3-1-0.7 0-0.5 0-2.1 0-4.1 0-1.4-0.5-2.3-1-2.8 3.3-0.4 6.9-1.6 6.9-7.4 0-1.6-0.6-3-1.5-4 0.2-0.4 0.7-1.9-0.2-4 -1.2-0.4-4.1 1.5-4.1 1.5C17.6 7.4 16.3 7.2 15 7.2s-2.6 0.2-3.7 0.5c0 0-2.9-1.9-4.1-1.5 -0.8 2.1-0.3 3.6-0.1 4C6 11.2 5.4 12.6 5.4 14.2c0 5.7 3.5 7 6.8 7.4 -0.4 0.4-0.8 1-1 2 -0.9 0.4-3 1.1-4.4-1.2 -0.8-1.4-2.3-1.5-2.3-1.5 -1.5 0-0.1 0.9-0.1 0.9 1 0.4 1.7 2.2 1.7 2.2 0.9 2.7 5.1 1.8 5.1 1.8 0 1.3 0 2.4 0 2.8 0 0.4-0.3 0.9-1 0.7C4.3 27.2 0 21.6 0 15 0 6.7 6.7 0 15 0s15 6.7 15 15C30 21.6 25.7 27.2 19.7 29.2z" fill="#2B2B2B")
+            li.social__item
+              a.social__link(href="#")
+                svg(xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30")
+                  path(class="social__img--skype" d="M22.5 30c-1.7 0-3.3-0.6-4.6-1.6 -0.9 0.2-1.9 0.3-2.9 0.3C7.4 28.8 1.3 22.6 1.3 15c0-1 0.1-2 0.3-2.9C0.6 10.8 0 9.2 0 7.5 0 3.4 3.4 0 7.5 0c1.7 0 3.3 0.6 4.6 1.6C13 1.4 14 1.3 15 1.3c7.6 0 13.8 6.2 13.8 13.8 0 1-0.1 2-0.3 2.9C29.4 19.2 30 20.8 30 22.5 30 26.6 26.6 30 22.5 30zM16.8 13.1l-2-0.5c-1.5-0.4-2.6-0.6-2.6-1.7 0-1 1.1-1.5 2.8-1.5 3.1 0 3.1 2.2 5 2.2 1.3 0 2-1 2-2.1 0-2.2-3.7-3.7-7.4-3.7 -3.4 0-7.3 1.5-7.3 5.4 0 3.3 2.2 4.5 5 5.1l2.9 0.7c1.7 0.4 2.8 0.6 2.8 1.9 0 1-1.1 1.8-2.8 1.8 -3.6 0-3.8-3-5.9-3 -1.4 0-2 1-2 2.1 0 2.4 3.7 4.4 8.1 4.4 3.7 0 7.5-1.8 7.5-5.8C22.9 14.9 19.6 13.7 16.8 13.1z" fill="#3F3F3F")
+            li.social__item
+              a.social__link(href="#")
+                svg(xmlns="http://www.w3.org/2000/svg" width="38" height="21" viewBox="0 0 37.5 21.4")
+                  path(class="social__img--vk" d="M34.5 7.3c-3.8 5-4.2 4.6-1.1 7.5 3 2.8 3.6 4.1 3.7 4.3 0 0 1.3 2.2-1.4 2.2l-5 0.1c-1.1 0.2-2.5-0.8-2.5-0.8 -1.9-1.3-3.6-4.6-5-4.2 0 0-1.4 0.4-1.4 3.5 0 0.6-0.3 1-0.3 1s-0.4 0.4-1 0.4h-2.2c-4.9 0.3-9.3-4.2-9.3-4.2S4.3 12.1 0.1 2.3c-0.3-0.6 0-1 0-1s0.3-0.4 1.1-0.4l5.4 0C7.1 1 7.5 1.3 7.5 1.3s0.3 0.2 0.5 0.6c0.9 2.2 2 4.2 2 4.2 2 4 3.3 4.7 4 4.3 0 0 1-0.6 0.8-5.5 -0.1-1.8-0.6-2.6-0.6-2.6 -0.4-0.6-1.3-0.8-1.7-0.8 -0.3 0 0.2-0.7 0.8-1.1 1-0.5 2.7-0.5 4.7-0.5 1.6 0 2 0.1 2.6 0.3 1.9 0.4 1.2 2.2 1.2 6.3 0 1.3-0.3 3.2 0.7 3.8 0.4 0.3 1.4 0 3.9-4.2 0 0 1.2-2 2.1-4.4 0.2-0.4 0.5-0.6 0.5-0.6s0.3-0.2 0.7-0.1l5.6 0c1.7-0.2 2 0.6 2 0.6C37.8 2.3 36.8 4.2 34.5 7.3z" fill="#3F3F3F")
     section.intro
-      .intro-wrapper
-        h1 О будущем ученике
-        p Ребятам из Loftschool будет полезно узнать немного обо мне
-        .intro-item.intro-item__left
-          .introitem-icon
+      .intro__wrapper
+        .intro__text
+          h1.main__title О будущем ученике
+          h3.main__subtitle Ребятам из Loftschool будет полезно узнать немного обо мне
+        .intro__item.intro__item--left
+          .introitem__icon
           .introitem-description
             h3 Немного обо мне
             p Я живу в Санкт-Петербурге(Россия). Мне 27 лет. Высшее образование - закончил Национальный исследовательский университет "МЭИ". Опыт в разработке 1 год.
-        .intro-item.intro-item__right
-          .introitem-icon
+        .intro__item.intro__item--right
+          .introitem__icon
           .introitem-description
             h3 Мой опыт в разработке
-            p В этом блоке я рассказываю о себе, что я уже умею. Здесь я укажу другие курсы, которе до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру html5,css3,sass,jade,git и пр.
+            p В этом блоке я рассказываю о себе, что я уже умею. Здесь я укажу другие курсы, которе до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру html5,css3,sass,jade,git и пр. Занимаюсь CRO development в Veeam Software, участвуя в разнообразных запусках продуктовых и Event кампаний для аудитории по всему миру. Верстаем страницы с учетом локальной специфики.
       section.courses
-        .courses-wrapper
-          h1
-          p
-          ul.courses-list
-            li.courses-item
-              .course-image
-              .course-description
+        .courses__wrapper
+          h1.main__title Курсы на LoftBlog
+          h3.main__subtitle которые мне помогут в выполнении этого задания
+          ul.courses__list
+            li.courses__item
+              .course__image
+              .course__description
                 h3 Основы Javascript
                 p Видеокурс о одном из самых популярных языков программирования - JS. Изучая этото курс вы познаете этот прекрасные язык от самых основ.
                 p 24 урока (6 часов 46 минут)
-              .course_checkbox
+              .course__checkbox
                 input(type="checkbox" class="checkbox")
                 label Посмотрел
-            li.courses-item
-              .course-image
-              .course-description
+            li.courses__item
+              .course__image
+              .course__description
                 h3
                 h3 Основы JQUERY
                 p Видеокурс о одном из самых популярных языков программирования - JS. Изучая этото курс вы познаете этот прекрасные язык от самых основ.
                 p 11 уроков (2 часа 6 минут)
-              .course_checkbox
+              .course__checkbox
                 input(type="checkbox" class="checkbox")
                 label Посмотрел
-            li.courses-item
-              .course-image
-              .course-description
+            li.courses__item
+              .course__image
+              .course__description
                 h3 Базовые элементы страницы
                 p Видеокурс по верстке и программированию оснвных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
                 p 9 уроков (2 часа 7 минут)
-              .course_checkbox
+              .course__checkbox
                 input(type="checkbox" class="checkbox")
                 label Посмотрел
-            li.courses-item
-              .course-image
-              .course-description
+            li.courses__item
+              .course__image
+              .course__description
                 h3 Создание адаптивных сайтов
                 p В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптитвная верстка и дизайн.
                 p 7 уроков (2 часа 11 минут)
-              .course_checkbox
+              .course__checkbox
                 input(type="checkbox" class="checkbox")
                 label Посмотрел
-            li.courses-item
-              .course-image
-              .course-description
+            li.courses__item
+              .course__image
+              .course__description
                 h3 Верстка адаптивной css галереи
                 p В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.
                 p 6 уроков (1 час 9 минут)
-              .course_checkbox
+              .course__checkbox
                 input(type="checkbox" class="checkbox")
                 label Посмотрел
-            li.courses-item
-              .course-image
-              .course-description
+            li.courses__item
+              .course__image
+              .course__description
                 h3 Создание адаптивных сайтов
                 p В этом курсе мы разберем как сверстать адаптивную css галерею. Так же познакомимся с Flexbox
                 p 4 урока (50 минут)
-              .course_checkbox
+              .course__checkbox
                 input(type="checkbox" class="checkbox")
                 label Посмотрел
     footer.footer
-      .footer-wrapper
+      .footer__wrapper
         p Footer which should be deadly pinned to the bottom no matter the amount of content is on the page.
