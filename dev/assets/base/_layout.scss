@@ -238,8 +238,39 @@ p {
 .courses {
   background: url("/assets/state/gplaypattern.png")
 }
+.courses {
+  
+  &__list {
+  overflow: hidden;
+  }
 
+  &__item {
+  float: left;
+  width: 300px;
 
+  margin-right: 20px;
+  margin-bottom: 15px;
+
+  background: white;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  &__image {
+      height: 170px;
+    }
+  
+  &__description, &__checkbox {
+      padding: 20px;
+  }
+
+}
+
+.courses__checkbox {
+  background: rbg(246,247,242);
+}
   /*_____ Sticky footer _____ */
 
 .courses:after {
