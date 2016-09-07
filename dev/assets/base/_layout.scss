@@ -34,26 +34,29 @@ h1 {
 
 h3 {
   font-size: 21px;
-  @include fonts(fira);
 }
 
 p {
   margin: 18px 0;
    //Fonts
   color: rgba(169,169,169,.5);
-  @include fonts(fira);
 }
 
 .main__subtitle {
-  margin: 20px 0;
+  margin: 25px 0 10px 0;
   @include fonts(light);
   color: rgba(169,169,169,.5);
   }
 
 .main__title {
-  margin-top: 85px;
+  margin: 5px 0;
+}
+
+.footer__description {
+  margin: 0;
 }
   /*_____ Wrappers _____ */
+
 
 .header__wrapper, .intro__wrapper, .courses__wrapper,.footer__wrapper {
   min-height: 100%;
@@ -74,7 +77,7 @@ p {
 }
 
 .intro__wrapper {
-  min-height: 465px;
+  min-height: 475px;
 }
 
 .courses__wrapper {
@@ -128,26 +131,29 @@ p {
 
       border-radius: 50px;
       border: 1px solid rgb(210,214,205);
-      background: url("./assets/state/Vanya.png") no-repeat;
+      background: url("/assets/state/Vanya.png") no-repeat center center;
     
     &:hover {
       border:2px solid white;
     }
     }
 
-    .person__personinfo {
-      float: left;
+    .person {
 
-      padding: 10px 20px;
-      
-      h3 {
+      &__personinfo {
+        float: left;
+        padding: 10px 20px;
+        }
+
+      &__title {
         margin-top: 0;
         margin-bottom: 10px;
         color: white;
         @include fonts(medium);
       }
 
-      p {
+      &__email {
+        margin: 0;
         color: rgb(225,238,212);
       }
 
@@ -187,15 +193,16 @@ p {
   }
 }
 
- /*_____ About the Student section _____ */
-.intro__text {
-  padding-top: 77px; 
+ /*_____ Title main area _____ */
+.title__area {
+  padding-top: 70px;
+  padding-bottom: 20px; 
   text-align: center;
+}
 
-  h3 {
-    margin: 20px 0 40px 0;
-    @include fonts(light);
-  }
+ /*_____ About the Student section _____ */
+.intro__description {
+  overflow: hidden;
 }
 
 .intro__item {
@@ -221,11 +228,17 @@ p {
   margin-right: 20px;
   }
 
-  &item-description {
+  &item__description {
   float: left;
   width: 300px;
   }
 }
+
+  /*_____ Courses area _____ */
+.courses {
+  background: url("/assets/state/gplaypattern.png")
+}
+
 
   /*_____ Sticky footer _____ */
 
