@@ -11,8 +11,8 @@ html, body {
 }
 
 body {
-  font-size: 14px;
   @include fonts(fira);
+  font-size: 14px;
 }
 
 ul {
@@ -28,8 +28,8 @@ h1,h2,h3, p{
 }
 
 h1 {
-  font-size: 42px;
   @include fonts(medium);
+  font-size: 42px;
 }
 
 h3 {
@@ -37,23 +37,24 @@ h3 {
 }
 
 p {
-  margin: 18px 0;
+  margin: 20px 0;
    //Fonts
-  color: rgba(169,169,169,.5);
+  color: rgb(114,114,114);
 }
 
 .main__subtitle {
-  margin: 25px 0 10px 0;
   @include fonts(light);
-  color: rgba(169,169,169,.5);
+  margin: 25px 0 10px 0;
+  color: rgb(114,114,114);
   }
 
 .main__title {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .footer__description {
   margin: 0;
+  color: rgb(169,169,169);
 }
   /*_____ Wrappers _____ */
 
@@ -73,11 +74,7 @@ p {
 
 .intro__wrapper, .courses__wrapper {
   width: 960px;
-  padding: 0 10px;
-}
-
-.intro__wrapper {
-  min-height: 475px;
+  padding: 75px 10px;
 }
 
 .courses__wrapper {
@@ -195,7 +192,6 @@ p {
 
  /*_____ Title main area _____ */
 .title__area {
-  padding-top: 70px;
   padding-bottom: 20px; 
   text-align: center;
 }
@@ -231,6 +227,8 @@ p {
   &item__description {
   float: left;
   width: 300px;
+
+  padding-right: 20px;
   }
 }
 
