@@ -51,12 +51,19 @@ gulp.task('html', function () {
           .pipe(gulp.dest('./prod/'))
       });
 
+  gulp.task('script', function () {
+    return gulp.src('./dev/js/*.js')
+      .pipe(gulp.dest('./prod/js/'))
+  });
+
 //Gulp watchers
 gulp.task('watch', function () {
   gulp.watch(['./dev/*.pug'], ['pug']);
   gulp.watch(['./dev/**/*.scss'], ['sass']);
   gulp.watch(['./prod/*.html'],['html']);
   gulp.watch(['./prod/assets/styles.css'],['html']);
+  gulp.watch(['./dev/js/*.js'],['script']);
+  gulp.watch(['./prod/js/*.js'],['html']);
 });
  
 gulp.task('default', ['connectDev', 'watch']);
