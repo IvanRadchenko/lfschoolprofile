@@ -42,12 +42,15 @@ block body
               p В этом блоке я рассказываю о себе, что я уже умею. Здесь я укажу другие курсы, которе до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру html5,css3,sass,jade,git и пр.
     section.courses
       .courses__wrapper
-        .title__area
+        .courses__complete
+          h1.courses__complete-text &#10003; Задание выполнено
+        .title__area.title__area--none
           h1.main__title LoftBlog courses
           h3.main__subtitle that will help me acomplish this task
         .courses__area
           ul.courses__list
             li.courses__item
+              .courses__item-overlay
               .courses__image.courses__image--1
                 .image__hover
               .courses__description
@@ -59,6 +62,7 @@ block body
                 i(class="fa fa-check" aria-hidden="true")
                 label(for="js") Watched
             li.courses__item
+              .courses__item-overlay
               .courses__image.courses__image--2
                 .image__hover
               .courses__description
@@ -70,6 +74,7 @@ block body
                 i(class="fa fa-check" aria-hidden="true")
                 label(for="jquery") Watched
             li.courses__item
+              .courses__item-overlay
               .courses__image.courses__image--3
                 .image__hover
               .courses__description
@@ -82,6 +87,7 @@ block body
                 label(for="base") Watched
           ul.courses__list
             li.courses__item
+              .courses__item-overlay
               .courses__image.courses__image--4
                 .image__hover
               .courses__description
@@ -93,6 +99,7 @@ block body
                 i(class="fa fa-check" aria-hidden="true")
                 label(for="adt") Watched
             li.courses__item
+              .courses__item-overlay
               .courses__image.courses__image--5
                 .image__hover
               .courses__description
@@ -104,6 +111,7 @@ block body
                 i(class="fa fa-check" aria-hidden="true")
                 label(for="cssgal") Watched
             li.courses__item
+              .courses__item-overlay
               .courses__image.courses__image--6
                 .image__hover
               .courses__description

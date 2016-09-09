@@ -11,14 +11,19 @@ $( ".courses__item" ).hover(
 
 
   /*_____ Clickable Courses Item in order to fadeout and check the checkbox _____ */
-  $ ( ".courses__item" ).click( function () {
-    $(this).find(".checkbox").prop('checked', true);
-    $( event.target ).closest( ".courses__item" ).fadeOut("400");
+var clickedElements = [];
+  $( ".courses__item" ).click( function () {
+    $( this ).find(".checkbox").prop("checked", true);
+    $( this ).children( ".courses__item-overlay" ).fadeIn("slow");
+    $( this ).closest( ".courses__item" ).delay(300).fadeOut("slow");
+    clickedElements.push(1);
+    if (clickedElements.length == 6) {
+        $( ".title__area--none" ).delay(300).fadeOut("slow");
+        $( ".courses__complete").delay(800).fadeIn("slow");
+      } 
  });
 
 
 /*_____ Overlay Complete Statement if all lis displayed none____ */
-var ulempy = $('ul:empty');
-if ulempy {
-  alert("hey");
-}
+
+

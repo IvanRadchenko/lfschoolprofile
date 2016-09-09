@@ -65,7 +65,6 @@ label {
 
 
 .header__wrapper, .intro__wrapper, .courses__wrapper,.footer__wrapper {
-  min-height: 100%;
   margin: 0 auto;
 
   position:relative;
@@ -84,6 +83,7 @@ label {
 
 .courses__wrapper {
   margin-bottom: -72px;
+  min-height: 1240px;
 
   &:after {
     content: "";
@@ -263,6 +263,8 @@ label {
 
   &__item {
   float: left;
+  display: block;
+  position: relative;
   width: 300px;
 
   margin-right: 20px;
@@ -280,7 +282,7 @@ label {
     display: block;
     float: left;
     width: 300px;
-    z-index: 1000;
+    z-index: 200;
     background: black;
   }
  }
@@ -323,6 +325,16 @@ label {
 
 }
 
+/*_____ Completed courses text _____ */
+
+.courses__complete {
+  display: none;
+  position: absolute;
+  left: 28%;
+  top: 45%;
+  
+  color: $green;
+}
   /*_____ Line hover affect _____ */
 
 .image__hover {
@@ -332,7 +344,7 @@ label {
 
   width: 100%;
   height: 5px;
-  z-index: 555;
+  z-index: 10;
 
   display: none;
 }
@@ -357,7 +369,18 @@ label {
     }
   }
 
-  /*_____ Checkbox on change effects _____ */
+  /*_____ Element Checkbox on change effects _____ */
+.courses__item-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: $green;
+  opacity: 0.4;
+  display: none;
+}
 
 .courses__checkbox {
   position: relative;
